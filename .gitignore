@@ -1,0 +1,37 @@
+# Build / external dependencies
+build/
+dist/
+wheelhouse/
+external/
+_skbuild/
+*.egg-info/
+*.so
+*.pyd
+*.dll
+*.dylib
+
+# Build logs
+build_log.txt
+uv_build_log.txt
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+env/
+
+# Docs
+site/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temp
+temp/

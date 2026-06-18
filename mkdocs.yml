@@ -1,0 +1,34 @@
+site_name: compas_manifold
+site_description: Robust, guaranteed-manifold mesh booleans for COMPAS, powered by the Manifold library.
+repo_url: https://github.com/petrasvestartas/compas_manifold
+repo_name: petrasvestartas/compas_manifold
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: blue
+      accent: blue
+
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Examples:
+      - Booleans: examples/example_booleans.md
+      - Polygonal faces & outlines: examples/example_boolean_polygons.md
+      - Boolean chain: examples/example_boolean_chain.md
+      - Face source tracking: examples/example_boolean_face_source.md
+  - API:
+      - booleans: api/compas_manifold.booleans.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.snippets
+
+plugins:
+  - search

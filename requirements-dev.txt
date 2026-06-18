@@ -1,0 +1,14 @@
+-r requirements.txt
+
+# build
+nanobind>=2.0
+scikit-build-core[pyproject]>=0.10
+cmake>=3.24
+ninja
+
+# test + lint
+pytest
+ruff
+
+# visualization (for the example scripts)
+compas_viewer

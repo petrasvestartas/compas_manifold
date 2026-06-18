@@ -1,0 +1,16 @@
+name: compas_manifold-dev
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.9
+  - cmake>=3.24
+  - ninja
+  - cxx-compiler
+  - numpy>=1.24
+  - pip
+  - pip:
+      - compas>=2.15,<3
+      - nanobind>=2.0
+      - scikit-build-core[pyproject]>=0.10
+      - pytest
+      - ruff
