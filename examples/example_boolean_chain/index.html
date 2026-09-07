@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -29,7 +29,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -691,9 +691,9 @@ degenerate CSG configuration that Manifold handles without any work-arounds.</p>
 
 
 <span class="k">def</span><span class="w"> </span><span class="nf">cyl</span><span class="p">(</span><span class="n">axis</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="mf">0.6</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">axis</span> <span class="o">==</span> <span class="s2">&quot;x&quot;</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">axis</span> <span class="o">==</span> <span class="s2">"x"</span><span class="p">:</span>
         <span class="n">frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
-    <span class="k">elif</span> <span class="n">axis</span> <span class="o">==</span> <span class="s2">&quot;y&quot;</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="n">axis</span> <span class="o">==</span> <span class="s2">"y"</span><span class="p">:</span>
         <span class="n">frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">frame</span> <span class="o">=</span> <span class="n">Frame</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
@@ -704,8 +704,8 @@ degenerate CSG configuration that Manifold handles without any work-arounds.</p>
 <span class="n">sphere</span> <span class="o">=</span> <span class="n">Sphere</span><span class="p">(</span><span class="mf">1.3</span><span class="p">,</span> <span class="n">point</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span><span class="o">.</span><span class="n">to_vertices_and_faces</span><span class="p">(</span><span class="n">u</span><span class="o">=</span><span class="mi">64</span><span class="p">,</span> <span class="n">v</span><span class="o">=</span><span class="mi">64</span><span class="p">,</span> <span class="n">triangulated</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 <span class="n">V</span><span class="p">,</span> <span class="n">F</span> <span class="o">=</span> <span class="n">boolean_chain</span><span class="p">(</span>
-    <span class="p">[</span><span class="n">cube</span><span class="p">,</span> <span class="n">sphere</span><span class="p">,</span> <span class="n">cyl</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">),</span> <span class="n">cyl</span><span class="p">(</span><span class="s2">&quot;y&quot;</span><span class="p">),</span> <span class="n">cyl</span><span class="p">(</span><span class="s2">&quot;z&quot;</span><span class="p">)],</span>
-    <span class="p">[</span><span class="s2">&quot;intersection&quot;</span><span class="p">,</span> <span class="s2">&quot;difference&quot;</span><span class="p">,</span> <span class="s2">&quot;difference&quot;</span><span class="p">,</span> <span class="s2">&quot;difference&quot;</span><span class="p">],</span>
+    <span class="p">[</span><span class="n">cube</span><span class="p">,</span> <span class="n">sphere</span><span class="p">,</span> <span class="n">cyl</span><span class="p">(</span><span class="s2">"x"</span><span class="p">),</span> <span class="n">cyl</span><span class="p">(</span><span class="s2">"y"</span><span class="p">),</span> <span class="n">cyl</span><span class="p">(</span><span class="s2">"z"</span><span class="p">)],</span>
+    <span class="p">[</span><span class="s2">"intersection"</span><span class="p">,</span> <span class="s2">"difference"</span><span class="p">,</span> <span class="s2">"difference"</span><span class="p">,</span> <span class="s2">"difference"</span><span class="p">],</span>
 <span class="p">)</span>
 
 <span class="n">shape</span> <span class="o">=</span> <span class="n">Polyhedron</span><span class="p">(</span><span class="n">V</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span> <span class="n">F</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span><span class="o">.</span><span class="n">to_mesh</span><span class="p">()</span>
@@ -724,7 +724,7 @@ Manifold's <code>BatchBoolean</code>, which evaluates the whole CSG batch at onc
 faster than folding pairwise:</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">compas_manifold.booleans</span><span class="w"> </span><span class="kn">import</span> <span class="n">boolean_batch</span>
 
-<span class="n">V</span><span class="p">,</span> <span class="n">F</span> <span class="o">=</span> <span class="n">boolean_batch</span><span class="p">([</span><span class="n">mesh_a</span><span class="p">,</span> <span class="n">mesh_b</span><span class="p">,</span> <span class="n">mesh_c</span><span class="p">],</span> <span class="s2">&quot;union&quot;</span><span class="p">)</span>
+<span class="n">V</span><span class="p">,</span> <span class="n">F</span> <span class="o">=</span> <span class="n">boolean_batch</span><span class="p">([</span><span class="n">mesh_a</span><span class="p">,</span> <span class="n">mesh_b</span><span class="p">,</span> <span class="n">mesh_c</span><span class="p">],</span> <span class="s2">"union"</span><span class="p">)</span>
 </code></pre></div>
 
 
@@ -778,7 +778,7 @@ faster than folding pairwise:</p>
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.sections", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>

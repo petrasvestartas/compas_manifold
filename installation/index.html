@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -29,7 +29,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.ec1eaa64.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -830,8 +830,8 @@ pip<span class="w"> </span>install<span class="w"> </span>.
 <h3 id="editable-development-install">Editable / development install</h3>
 <p>Install the build dependencies once, then build without isolation so rebuilds
 are fast:</p>
-<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>nanobind<span class="w"> </span><span class="s2">&quot;scikit-build-core[pyproject]&quot;</span><span class="w"> </span>cmake<span class="w"> </span>ninja
-pip<span class="w"> </span>install<span class="w"> </span><span class="s2">&quot;numpy&gt;=1.24&quot;</span><span class="w"> </span><span class="s2">&quot;compas&gt;=2.15,&lt;3&quot;</span><span class="w"> </span>pytest
+<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>nanobind<span class="w"> </span><span class="s2">"scikit-build-core[pyproject]"</span><span class="w"> </span>cmake<span class="w"> </span>ninja
+pip<span class="w"> </span>install<span class="w"> </span><span class="s2">"numpy&gt;=1.24"</span><span class="w"> </span><span class="s2">"compas&gt;=2.15,&lt;3"</span><span class="w"> </span>pytest
 
 pip<span class="w"> </span>install<span class="w"> </span>--no-build-isolation<span class="w"> </span>-ve<span class="w"> </span>.
 </code></pre></div>
@@ -843,8 +843,8 @@ pulls in the build, test, docs, and visualization dependencies:</p>
 <span class="c1"># source .venv/Scripts/activate     # Windows (Git Bash / MINGW64)</span>
 <span class="c1"># .venv\Scripts\activate            # Windows (PowerShell / cmd)</span>
 
-uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>nanobind<span class="w"> </span><span class="s2">&quot;scikit-build-core[pyproject]&quot;</span><span class="w"> </span>cmake<span class="w"> </span>ninja
-uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--no-build-isolation<span class="w"> </span>-ve<span class="w"> </span><span class="s2">&quot;.[dev]&quot;</span>
+uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>nanobind<span class="w"> </span><span class="s2">"scikit-build-core[pyproject]"</span><span class="w"> </span>cmake<span class="w"> </span>ninja
+uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--no-build-isolation<span class="w"> </span>-ve<span class="w"> </span><span class="s2">".[dev]"</span>
 </code></pre></div>
 <p>To auto-rebuild the C++ when the module is imported after editing a <code>.cpp</code>:</p>
 <div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>--no-build-isolation<span class="w"> </span>-ve<span class="w"> </span>.<span class="w"> </span>-Ceditable.rebuild<span class="o">=</span><span class="nb">true</span>
@@ -911,7 +911,7 @@ uv<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </s
       <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.sections", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>
